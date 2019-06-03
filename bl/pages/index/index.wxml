@@ -1,0 +1,27 @@
+<view class='title' bindtap='action_sheet'>
+  <text class='pull-left'>{{"<<"}}</text>
+  {{title}}
+  <text class='pull-right'>>></text>
+</view>
+<view class='time'>
+  <view class='big-circle blue'></view>
+  <view animation='{{leftAnimationData}}' class='big-circle blue1 right'></view>
+  <view class='circle'>
+    <view>{{leftTime}}s</view>
+  </view>
+
+  <view class='big-circle blue second'></view>
+  <view animation='{{rightAnimationData}}' class='big-circle blue1 right second'></view>
+  <view class='circle second'>
+    <view>{{rightTime}}s</view>
+  </view>
+</view>
+<view class='btnGroup'>
+  <button bindtap='leftStart' class='btn'>正方发言</button>
+  <button bindtap='rightStart' class='btn'>反方发言</button>
+</view>
+
+<view class='desc'>
+  <text>{{desc}}</text>
+</view>
+
